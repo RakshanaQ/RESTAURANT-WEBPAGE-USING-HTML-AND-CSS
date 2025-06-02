@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <title>MENU</title>
+        <style>
+                body{
+                    margin: 0;
+                    padding: 0;
+                    box-sizing: border-box;
+
+                    width: 100%;
+                    min-height: 100vh;
+                    background-color: rgb(254, 254, 254);
+                }
+
+                header{
+                    height: 60px;
+                    width: 100%;
+                    background-color: rgb(0, 0, 0);
+                    color: azure;
+                    display: flex;
+                    align-items: center;
+                }
+                .container{
+                    width: 90%;
+                    margin: 0 auto;
+                    display: flex;
+                    align-items:center;
+                    justify-content: space-between;
+                }
+
+                .nav-list{
+                    display: none;
+                }
+                nav ul li{
+                    list-style: none;
+                    display: inline;
+                    margin-right: 20px;
+                    font-weight: 550;
+                }
+                .logo{
+                    font-size: 24px;
+                }
+                .top{
+                    width: 100%;
+                    height:auto;
+                    background: url(restaurant_img2.jpeg);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center;
+                    color: white;
+                    text-align: center;
+                    padding: 140px 0;
+                    margin-bottom: 20px;
+                    
+                }
+                .top h2{
+                    font-size: 20px;
+                    margin-bottom: 10px;
+
+                }
+
+                .search-box{
+                    max-width:550px;
+                    margin:15px auto;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                   
+                }
+                .search-box input{
+                    width: 70%;
+                    padding: 10px;
+                    outline: none;
+                    border: 0;
+                    border-radius: 5px 0 0 5px;
+                    font-size: 1rem;
+                    border: 1px solid rgb(34, 33, 32);
+                }
+                .search-box button{
+                     
+                    padding: 10px 20px;
+                    outline: none;
+                    border: 0;
+                    border-radius:  0 5px 5px 0;
+                    font-size: 1rem;
+                    background: rgb(216, 198, 95);
+                    cursor: pointer;
+
+                }
+
+/* .......recipe section...... */
+
+                .recipes{
+                    padding: 50px 0;
+                }
+                .recipes h1{
+                    text-align: center;
+                    margin-bottom: 30px;
+                    font-size: 28px;
+                }
+                .recipe-section{
+                    width: 90%;
+                    margin: 0 auto;
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+                    column-gap: 10px;
+                }
+
+                .recipe-card{
+                    background: white;
+                    margin: 30px 10px ;
+                    border-radius: 10px ;
+                    border:1px solid rgb(168, 168, 26);
+                    overflow: hidden;
+                    box-shadow:0 4px 5px ;
+                }
+                 .recipe-card img{
+                    width: 100%;
+                    height: 200px ;
+                    object-fit: cover;
+                    
+
+                }
+
+                .recipe-card h2{
+                   font-size: 22px;
+                   padding:20px ;
+
+                }
+
+                .recipe-card p{
+                   font-size: 18px;
+                   padding: 20px ;
+
+                }
+                .recipe-card a{
+                    width: 100%;
+                    display: block;
+                    text-align: center;
+                    text-decoration: none;
+                    background: rgb(78, 75, 75);
+                    color: white;
+                    padding:  15px 0;
+                    cursor: pointer;
+                }
+
+                footer{
+                    background: rgb(58, 18, 18);
+                    padding: 20px 0;
+                    color: aliceblue;
+                    text-align: center;
+                }
+
+
+
+                
+                                 
+
+            .menu-icon{
+                font-size: 30px;
+                padding: 20px;
+                text-align: right;
+                cursor: pointer;
+                display: block;
+
+            }
+
+            @media only screen and (min-width:768px){
+                .menu-icon{
+                    display: none;
+                }
+
+                .nav-list{
+                    display: block;
+                }
+
+                }
+
+
+
+        </style>
+    </head>
+
+
+    <body>
+    <header>
+        <div class="container">
+            <h1 class="logo">Delicious recipe</h1>
+            <nav>
+                <div class="menu-icon">&#9776;</div>
+                <ul class="nav-list">
+                    <li>HOME</li>
+                    <li>ABOUT</li>
+                    <li>RECIPES</li>
+                    <li>CONTACT</li>
+                </ul>
+            </nav>
+            </div>
+        </header>
+
+<!-- .........top section..... -->
+
+        <section class="top">
+            <div class="top-section">
+                <h2>WELCOME TO OUR RECIPE</h2>
+                <p>Search mouth watering recipe collection to satisfy your craving</p>
+                <form action="#" class="search-box">
+                    <input type="text" placeholder="Search Recipe">
+                    <button type="submit">Search</button>
+                </form>
+            </div>
+
+        </section>
+
+<!-- .......recipe section..... -->
+        <section class="recipes">
+            <h1>Featured Recipes</h1>
+            <div class="recipe-section">
+                <div class="recipe-card">
+                    <img src="Texas-Style-Beef-Brisket_EXPS_MTBZ20_39534_E02_28_9b-2.jpg" alt="texas style beef bricket">
+                    <h2>Texas Style <br>Beef Brisket</h2>
+                    <p>Tender, slow-smoked brisket with a bold, peppery rub and rich smoky flavor. It pairs perfectly with tangy barbecue sauce, pickles.</p>
+                    <a href="#">View Recipe</a>
+                </div>
+
+                <div class="recipe-card">
+                    <img src="Easy-Key-Lime-Pie_EXPS_QEBZ20_247123_E01_24_5b.jpg" alt="texas style beef bricket">
+                    <h2>Easy Key <br> Lime Pie</h2>
+                    <p>Smooth, tangy key lime filling made with real lime juice, set in a buttery graham cracker crust. Finished with a light whipped topping.</p>
+                    <a href="#">View Recipe</a>
+                </div>
+
+                <div class="recipe-card">
+                    <img src="Wisconsin-Butter-Basted-Burgers_EXPS_THSUM18_205850_D02_02_5b-wo-beer-118.jpg" alt="burger">
+                    <h2>Wisconsin Butter Basted Burgers</h2>
+                    <p>Juicy, beef patties seared to perfection and basted with rich Wisconsin butter.Topped with melted cheese and fresh, crisp toppings. </p>
+                    <a href="#">View Recipe</a>
+                </div>
+
+
+                <div class="recipe-card">
+                    <img src="Pressure-Cooker-Philly-Cheesesteak-Sandwiches_EXPS_TOHON19_229309_B06_05_3b.jpg" alt="cheese steak">
+                    <h2>Pressure Cooker Philly Cheesesteak</h2>
+                    <p> Loaded with sautéed onions and peppers for a classic Philly flavor.Finished with melted cheese on a soft, toasted hoagie roll.</p>
+                    <a href="#">View Recipe</a>
+                </div>
+
+                
+
+
+            </div>
+        </section>
+
+
+
+        <footer>
+            <div>
+                <p>&copy; 2025 Delicious Recipes</p>
+            </div>
+        </footer>
+    </body>
+   
+</html>
